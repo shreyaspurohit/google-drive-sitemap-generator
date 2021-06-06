@@ -7,7 +7,7 @@ function onOpen(){
 
 function main() {
   var ui = SpreadsheetApp.getUi();
-  var response = ui.prompt('Number of folders deep do you want to generate?', 'Enter a number > 0', ui.ButtonSet.OK_CANCEL);
+  var response = ui.prompt('How many folders deep sitemap do you want to generate?', 'Enter a number > 0', ui.ButtonSet.OK_CANCEL);
   if (response.getSelectedButton() == ui.Button.OK) {
     const level = Number(response.getResponseText());
     var row=1, col = 1;
